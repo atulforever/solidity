@@ -30,5 +30,5 @@ contract TrasferMoney{
     function withdrawAllMoney(address payable _to) public {
         require(msg.sender == ownerAddress,"Un-authorized access.");
         _to.transfer(address(this).balance);
-    }    
+    }
 }
